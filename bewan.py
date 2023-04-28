@@ -31,6 +31,7 @@ class EACH_WORD:
 	def move_to_left(self):
 		pass
 	
+	
 	# abstraction concept hiding another method to make it simple
 	def word_moving(self, direction):
 		if direction == "right":
