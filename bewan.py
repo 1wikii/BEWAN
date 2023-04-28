@@ -53,7 +53,9 @@ def make_obj():
 	return EACH_WORD()
 
 pg.init()
-screen = pg.display.set_mode((720,500))
+width = 720
+height = 500
+screen = pg.display.set_mode((width,height))
 cl = pg.time.Clock()
 pg.display.set_caption('BEWAN')
 font = pg.font.SysFont('comicsansms',36)
@@ -67,7 +69,7 @@ while running:
 	screen.fill("purple")
 
 	show = font.render(the_word, True, main_word.color)
-	screen.blit(show, (200,200))
+	screen.blit(show, (width-50,200))
 
 	sc = font.render( f"Score : {score}", True, black)
 	screen.blit (sc, (10,10))
