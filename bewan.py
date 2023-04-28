@@ -8,7 +8,7 @@ orange = (242, 103, 10)
 black = (0, 0, 0)
 
 # WORD LIST 
-word_list = ['nangka','nanas','semangka','durian']
+word_list = ['nangka','nanas','semangka','durian','mangga']
 score = 0
 
 # Handling each letter color
@@ -30,7 +30,6 @@ class EACH_WORD:
 
 	def move_to_left(self):
 		pass
-	
 	
 	# abstraction concept hiding another method to make it simple
 	def word_moving(self, direction):
