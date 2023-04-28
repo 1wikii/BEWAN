@@ -9,5 +9,3 @@ Typing game with hunting concept
 - farhana  : `mik cucu`
 - darisilit : `infokan doksli`
 - *me      :  `nubes mas`
-
-akusdnja `rgb(9, 105, 218)`
