@@ -1,4 +1,4 @@
-# BEWAN
+# BEWAN  (berburu hewan)
 Typing game with hunting concept
 
 
