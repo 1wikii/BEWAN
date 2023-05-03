@@ -22,7 +22,6 @@ while True:
 		if frame_count % 180 == 0:
 			word_list.append(EACH_WORD())
 	
-
 	screen.fill("purple")
 	for word in word_list:
 		if word.x > -30:
@@ -44,10 +43,11 @@ while True:
 					idx += 1
 					break
 
-
 	sc = font.render( f"Score : {score}", True, red)
 	screen.blit (sc, ((width/2)-100 , height-100))
 	
 	frame_count += 1
 	pg.display.update()
 	cl.tick(fps)  # 60 fps
+
+# cobaa branch wiki
