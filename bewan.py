@@ -51,3 +51,6 @@ while True:
 	cl.tick(fps)  # 60 fps
 
 # farhna ubah screen fill
+
+
+# ini ubah dari farhan branch
