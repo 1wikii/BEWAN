@@ -4,8 +4,8 @@ Typing game with hunting concept
 
 # Anggota Kelompok
 
-- carlita  :  `by one dek`
-- budiono  : `adu deck sini`
-- farhana  : `mik cucu`
-- darisilit : `infokan doksli`
-- *me      :  `nubes mas`
+- Carlos Piero Parhusip      :  `by one dek`
+- Benedictus Budhi Dharmawan : `adu deck sini`
+- Farhan Apri Kesuma         : `mik cucu`
+- Daris Fikri Zhalifunnas    : `infokan doksli`
+- Ahmad Dwiky Zerro dixxon   : `121140044`
