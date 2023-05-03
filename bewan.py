@@ -49,3 +49,5 @@ while True:
 	frame_count += 1
 	pg.display.update()
 	cl.tick(fps)  # 60 fps
+
+# farhna ubah screen fill
