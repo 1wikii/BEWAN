@@ -14,6 +14,6 @@ frame_count = 0
 seconds = frame_count // fps  
 
 # Data
-all_word = ['appel','nanas','semangka','durian','mangga','anggur','melon','jeruk','rambutan','salak','pisang']
+all_word = ['apel','nanas','semangka','durian','mangga','anggur','melon','jeruk','rambutan','salak','pisang']
 score = 0
 word_list = []
