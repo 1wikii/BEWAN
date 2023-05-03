@@ -8,7 +8,9 @@ from source.variables import *
 pg.init()
 #pg.mixer.init()
 
-current_stage = stage_1
+stage = [stage_1, stage_2, stage_3]
+
+current_stage = stage[0]
 
 # Game Loop
 while True:
