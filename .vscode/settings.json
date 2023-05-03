@@ -1,0 +1,25 @@
+{
+    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "workbench.colorTheme":"Hack The Box",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "new": "cpp",
+        "string": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "bitset": "cpp",
+        "forward_list": "cpp",
+        "functional": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "streambuf": "cpp",
+        "cmath": "cpp"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+}
