@@ -20,7 +20,6 @@ class EACH_WORD:
 	def __init__(self):
 		self.x = (width + 30)
 		self.y = rr(50 , (height - 200))
-
 		self.__color = black
 		self.__speed = 1.2
 		self.word = rd.choice(all_word)
