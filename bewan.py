@@ -264,7 +264,7 @@ class MAIN:
 						word.speed = 10
 						word.display()
 				
-				if word.x < -10 and not word_empty(word.word):
+				if word.x < 0 and not word_empty(word.word):
 					if not self.game_over:
 						self.go_sound.play()
 					self.game_over  = True
