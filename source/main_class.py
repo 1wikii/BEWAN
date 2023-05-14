@@ -66,7 +66,11 @@ class WORD(LOAD):
 		pg.font.init()
 		self.all_animal = objek.all_animal
 		self.font = pg.font.SysFont('comicsansms',36)
-		self.x = (width + 30)
+
+		if (rnd == 0):
+			self.x = (width + 30)
+		else:
+			self.x = rr(-100, 400)
 		self.y = rr(80 , (height - 250))
 
 		self.__color = white

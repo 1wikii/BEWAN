@@ -206,8 +206,11 @@ class MAIN:
 				elif self.stage < 8:
 					if self.frame_count % 80 == 0:
 						self.word_list.append(WORD(self.load_asset_bird))
-				else:
+				elif self.stage < 10:
 					if self.frame_count % 60 == 0:
+						self.word_list.append(WORD(self.load_asset_bird))
+				else:
+					if self.frame_count % 40 == 0:
 						self.word_list.append(WORD(self.load_asset_bird))
 
 			
@@ -216,12 +219,12 @@ class MAIN:
 			screen.blit(self.hunter,(10,380))
 			screen.blit(self.score_board,(770,490))
 			screen.blit(self.stage_board, (400, 490))
+			self.redline.set_alpha(150)
+			screen.blit(self.redline, (-520,0))
 
 			# tampilan word
 			for word in self.word_list:
 				if word.x > -50 and not self.game_over:
-					self.redline.set_alpha(150)
-					screen.blit(self.redline, (-520,0))
 					if self.stage == 1:
 						word.display()
 					elif self.stage == 2:
