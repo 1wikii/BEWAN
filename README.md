@@ -15,4 +15,4 @@ Typing game with hunting concept
 | 121140179 | Farhan Apri Kesuma           | Tester dan Perbaikan Program   |
 | 121140193 | Carlos Piero Parhusip        | Pembuat Laporan                |
 
-** __IMPOETTANT__ **
+** _IMPOETTANT_ **
