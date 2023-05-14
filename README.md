@@ -8,8 +8,8 @@ cepatnya untuk mendapatkan skor yang lebih tinggi.
 
 # Anggota Kelompok
 
-| RA 01 |
-| ----- |
+| KELOMPOK : RA 01 |
+| ---------------- |
 
 |    NIM    |              Nama            |         Penugasan              |
 | --------- | ---------------------------- | ------------------------------ |
