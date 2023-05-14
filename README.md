@@ -31,11 +31,9 @@ Kedua, Klik `Downlowd ZIP`
 
 
 Ketiga, Buka Command Prompt dan buka direktori file disimpan 
-```
 
 ![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/direktori.png)
 
-```
 
 Keempat, Jalankan game (CMD) : 
 
