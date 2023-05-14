@@ -20,8 +20,29 @@ Typing game with hunting concept
 
 `Pastikan pyhton sudah terinstal di komputer`
 
-Buka Command Prompt 
+
+Pertama, Klik code
+
+![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/download.png)
+
+Kedua, Klik `Downlowd ZIP`
+
+![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/download-klik.png)
+
+
+Ketiga, Buka Command Prompt dan buka direktori file disimpan
+
+![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/direktori.png)
+
+
+Keempat, Jalankan game (CMD)
 
 ```
 # pip install pygame
+
+# python bewan.py
 ```
+
+
+
+ 
