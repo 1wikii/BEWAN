@@ -1,5 +1,9 @@
 # BEWAN  (berburu hewan)
-Typing game with hunting concept
+Bewan adalah game simulasi ketik dimana player harus mengetik sebuah kata yang
+muncul dalam game. Ketentuannya ketika hewan melebihi batas kiri layar atau hewan
+terbang bebas (tidak terlihat dilayar) maka game selesai atau playaer kalah.
+Keseruan dalam game ini player harus mengetikkan kata perkata dengan secepat-
+cepatnya untuk mendapatkan skor yang lebih tinggi.
 
 
 # Anggota Kelompok
