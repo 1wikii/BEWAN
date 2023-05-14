@@ -30,12 +30,14 @@ Kedua, Klik `Downlowd ZIP`
 ![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/download-klik.png)
 
 
-Ketiga, Buka Command Prompt dan buka direktori file disimpan
+Ketiga, Buka Command Prompt dan buka direktori file disimpan 
+```
 
 ![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/direktori.png)
 
+```
 
-Keempat, Jalankan game (CMD)
+Keempat, Jalankan game (CMD) : 
 
 ```
 # pip install pygame
