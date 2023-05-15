@@ -39,7 +39,7 @@ Ketiga, Buka Command Prompt dan buka direktori file disimpan
 ![Not Found](https://github.com/1wikii/BEWAN-berburu-hewan-/blob/main/img/direktori.png)
 
 
-Keempat, Jalankan game (CMD) : 
+Keempat, Instal Pygame kemudian Jalankan game (CMD) : 
 
 ```
 # pip install pygame
