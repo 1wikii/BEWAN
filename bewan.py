@@ -39,8 +39,6 @@ class MAIN:
 		self.bg_menu = pg.transform.scale(self.bg, (width,height))
 
 		# load music and sound
-		# pg.mixer.music.play(-1)
-		# pg.mixer.music.set_volume(0.4)
 		self.fire_sound = pg.mixer.Sound(os.path.join('asset','sound','Fire_Sound_Effect.mp3'))
 		self.typed_sound = pg.mixer.Sound(os.path.join('asset','sound','single_type.wav'))
 		self.go_sound = pg.mixer.Sound(os.path.join('asset','sound','go-sound.mp3'))
