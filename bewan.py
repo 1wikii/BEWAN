@@ -119,12 +119,12 @@ class MAIN:
 
 			self.press_enter = self.font_enter.render("Press Enter to play", True, black)
 			self.press_enter_rect = self.press_enter.get_rect()
-			self.press_enter_rect.center = (width // 2, (height // 2)-100)
+			self.press_enter_rect.center = (width // 2, (height // 2)-130)
 			screen.blit(self.press_enter, self.press_enter_rect)
 
-			self.press_space = self.font_space.render("Press Space to reset High Scores", True, dark_grey)
+			self.press_space = self.font_space.render("Press Space to reset High Scores", True, black)
 			self.press_space_rect = self.press_space.get_rect()
-			self.press_space_rect.center = (width // 2, (height // 2)-10)
+			self.press_space_rect.center = (width // 2, (height // 2)-30)
 			screen.blit(self.press_space, self.press_space_rect)
 
 			self.h_score_rect = self.high_score_board.get_rect()
@@ -183,6 +183,15 @@ class MAIN:
 		self.press_enter_menu_rect.center = (width // 2, (height // 2)-20)
 		screen.blit(self.press_enter_menu, self.press_enter_menu_rect)
 
+
+	def __correct(self,word):
+		word = list(word)
+		word.pop(0)
+		word = ''.join(word)
+		return word
+
+	def __word_empty(self,word):
+		return len(word) == 0
 
 	def start(self):
 		pg.mixer.music.load(os.path.join('asset','sound','main-music.mp3'))
@@ -264,7 +273,7 @@ class MAIN:
 						word.speed = 10
 						word.display()
 				
-				if word.x < 0 and not word_empty(word.word):
+				if word.x < 0 and not self.__word_empty(word.word):
 					if not self.game_over:
 						self.go_sound.play()
 					self.game_over  = True
@@ -309,9 +318,9 @@ class MAIN:
 						self.menu()
 
 					if event.unicode == word[self.idx].word[0]:
-						word[self.idx].word = correct(word[self.idx].word)
+						word[self.idx].word = self.__correct(word[self.idx].word)
 						self.typed_sound.play()
-						if word_empty(word[self.idx].word):
+						if self.__word_empty(word[self.idx].word):
 							self.score += 10
 							self.idx += 1
 							self.fire_sound.set_volume(1)

@@ -36,6 +36,8 @@ class LOAD(LIST_WORD):
 		self.list_love_b = []
 		self.list_merpati = []
 
+
+	# POLYMORPHISM OVERIDING (nama fungsi sama dengan action berbeda)
 	def load_asset(self):
 		self.list_b_hantu.append(pg.image.load(os.path.join("asset","birds","burung_hantu1.png")).convert_alpha())
 		self.list_b_hantu.append(pg.image.load(os.path.join("asset","birds","burung_hantu4.png")).convert_alpha())
@@ -66,6 +68,7 @@ class WORD(LOAD):
 		pg.font.init()
 		self.all_animal = objek.all_animal
 		self.font = pg.font.SysFont('comicsansms',36)
+		self.rnd = rnd
 
 		if (rnd == 0):
 			self.x = (width + 30)
@@ -81,12 +84,12 @@ class WORD(LOAD):
 		#self.img_up = self.img_csn[0]
 		self.img_down = self.img_csn[1]
 
-		self.load_asset()
-
 		# remove word if already in use avoid duplicate displayed word
 		if rnd == 0:
 			self.word = rd.choice(all_word)
 			all_word.remove(self.word)
+
+		self.load_asset()
 
 	@property
 	def color(self):
@@ -107,24 +110,41 @@ class WORD(LOAD):
 	def moving(self):
 		self.x -= self.__speed
 
+
+	# POLYMORPHISM OVERIDING (nama fungsi sama dengan action berbeda)
 	def load_asset(self):
-		# self.scale = (int(self.img_up.get_width() * 0.2) , int(self.img_up.get_height() * 0.2))
-		# self.up = pg.transform.scale(self.img_up, self.scale).convert_alpha()
+
+		self.black_box_load = pg.image.load(os.path.join("asset","board","black_box.png")).convert_alpha()
 
 		self.scale = (int(self.img_down.get_width() * 0.2) , int(self.img_down.get_height() * 0.2))
 		self.down = pg.transform.scale(self.img_down, self.scale).convert_alpha()
+
+	def scaling_black_box(self, word_width):
+		#self.black_box_scale = (int(self.black_box_load.get_width() * 0.5) , int(self.black_box_load.get_height() * 0.5))
+		self.black_box_scale = ( word_width+55, int(self.black_box_load.get_height() * 0.15))
+		self.black_box = pg.transform.scale(self.black_box_load, self.black_box_scale).convert_alpha()
 	
-	# abstraction concept hiding another method to make it simple
+	
 	def display(self):
 		self.moving()
 
-		show_word = self.font.render(self.word, True, self.color)
-		screen.blit(show_word, (self.x,self.y))
-		
-		if len(self.word) != 0:
+		if len(self.word) != 0 :
 			screen.blit(self.down, (self.x-50,self.y-150))
-		elif(len(self.word) > 7):
+		elif(len(self.word) > 7) :
 			screen.blit(self.down, (self.x-100,self.y-150))
+
+		self.show_word = self.font.render(self.word, True, self.color)
+		self.scaling_black_box(self.show_word.get_width())
+
+		if self.rnd == 0 and len(self.word) != 0:
+			self.tran = int((80 / 100) * 255)
+			self.black_box.set_alpha(self.tran)
+			screen.blit(self.black_box, (self.x-26,self.y))
+		
+		
+		screen.blit(self.show_word, (self.x,self.y))
+		
+		
 
 
 
