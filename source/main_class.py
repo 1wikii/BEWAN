@@ -3,7 +3,7 @@ import random as rd
 import os
 from random import randrange as rr
 from source.config import *
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 all_word = ['burung-hantu','kakak-tua','burung-cinta','elang','gagak','merpati']
 
@@ -21,7 +21,7 @@ class LIST_WORD(ABC):
 	def __init__(self):
 		self.all_animal = []
 
-	@abstractclassmethod
+	@abstractmethod
 	def load_asset(self):
 		pass
 		
@@ -35,7 +35,6 @@ class LOAD(LIST_WORD):
 		self.list_kk_tua = []
 		self.list_love_b = []
 		self.list_merpati = []
-
 
 	# POLYMORPHISM OVERIDING (nama fungsi sama dengan action berbeda)
 	def load_asset(self):
@@ -90,6 +89,9 @@ class WORD(LOAD):
 			all_word.remove(self.word)
 
 		self.load_asset()
+
+		self.__color = white
+		self.__speed = 2
 
 	@property
 	def color(self):
