@@ -90,9 +90,6 @@ class WORD(LOAD):
 
 		self.load_asset()
 
-		self.__color = white
-		self.__speed = 2
-
 	@property
 	def color(self):
 		return self.__color
